@@ -21,7 +21,7 @@ app.use(logger('combined', {stream : accessLog}));
 //使用json
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-//定位静态资源(img,css,font,...)到public
+//定位静态资源(js,img,css,font,...)到public
 app.use(express.static(path.join(__dirname, 'static')));
 
 
