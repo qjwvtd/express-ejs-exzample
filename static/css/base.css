@@ -1,0 +1,20 @@
+*{margin: 0;padding: 0;box-sizing: border-box}
+body {font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;}
+a {outline: none;text-decoration: none;color: #00B7FF;}
+html,body{height: 100%;}
+div.top{height: 60px;}
+div.bottom{
+    overflow: hidden;
+    height: calc(100% - 60px);
+}
+div.bottom .left,div.bottom .right{
+    float: left;
+    height: 100%;
+}
+div.bottom .left{
+    width: 160px;
+    background: rgb(1, 90, 126);
+}
+div.bottom .right{
+    width: calc(100% - 160px);
+}

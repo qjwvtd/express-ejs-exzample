@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>express-ejs-exzample</title>
+    <link rel='stylesheet' href='/css/base.css' />
+  </head>
+  <body>
+      <div class="top"><%include ./header.html %></div>
+      <div class="bottom">
+        <div class="left">
+          <%include ./nav.html %>
+        </div>
+        <div class="right">
+            <h1><%= title %></h1>
+            <p>Welcome to <%= title %></p>
+        </div>
+      </div>
+  </body>
+</html>

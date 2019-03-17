@@ -1,9 +1,14 @@
-<style>
-  ul{list-style: none;overflow: hidden;}
-  ul li{width: 120px;height: 44px;line-height: 44px;float: left;}
+
+<style type="text/css">
+  .nav{background: rgb(1, 90, 126)}
+  .nav a{padding: 10px 0px 10px 20px;color: #fff;display: inline-block;width: 100%;}
+  .nav a:hover{background: rgb(3, 165, 230)}
+  .nav a.active{background: rgb(2, 144, 201)}
 </style>
-<ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/users">users</a></li>
-  <li><a href="/about">about</a></li>
-</ul>
+<div id="nav" class="nav">
+  <a href="/" class="<%= isMainActive('/') %>">Job<br/>Intention</a>
+  <a href="/self" class="<%= isMainActive('/self') %>">Self<br/>Evaluation</a>
+  <a href="/work" class="<%= isMainActive('/work') %>">work<br/>Experience</a>
+  <a href="/project" class="<%= isMainActive('/project') %>">Project<br/>Experience</a>
+</div>
+  
