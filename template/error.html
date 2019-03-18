@@ -1,3 +1,19 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>express-ejs-exzample</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel='stylesheet' href='/css/base.css' />
+</head>
+
+<body>
+  <div class="top"><%include ./header.html %></div>
+  <div class="bottom">
+    <h1><%= message %></h1>
+    <h2><%= error.status %></h2>
+    <pre><%= error.stack %></pre>
+  </div>
+</body>
+
+</html>
