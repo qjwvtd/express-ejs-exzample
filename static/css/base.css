@@ -2,10 +2,10 @@
 body {font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;}
 a {outline: none;text-decoration: none;color: #00B7FF;}
 html,body{height: 100%;}
-div.top{height: 60px;}
+div.top{height: 100px;}
 div.bottom{
     overflow: hidden;
-    height: calc(100% - 60px);
+    height: calc(100% - 100px);
 }
 div.bottom .left,div.bottom .right{
     float: left;
